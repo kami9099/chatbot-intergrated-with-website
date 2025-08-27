@@ -52,7 +52,7 @@ const Chatbot: React.FC<ChatbotProps> = ({ isOpen, onClose }) => {
     setIsLoading(true);
 
     try {
-      const response = await fetch('https://kamjee.app.n8n.cloud/webhook-test/b95b9eb5-5a6f-41da-a201-e04d5345dfd1', {
+      const response = await fetch('https://kamjee.app.n8n.cloud/webhook/b95b9eb5-5a6f-41da-a201-e04d5345dfd1', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

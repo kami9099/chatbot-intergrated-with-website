@@ -70,7 +70,7 @@ const Chatbot: React.FC<ChatbotProps> = ({ isOpen, onClose }) => {
       
       if (response.ok) {
         const data = await response.json();
-        responseText = data.message || data.response || JSON.stringify(data);
+        responseText = data.output || 'I received your message. How else can I help you?';
       } else {
         responseText = 'I apologize, but I encountered an issue processing your request. Please try again.';
       }
